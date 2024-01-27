@@ -2,8 +2,10 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "assets/AssetManifest.json": "7ad0e45f7a9878d0740d8d8c690ad0f8",
+
+const RESOURCES = {"assets/AssetManifest.bin": "ee757b7507cc78fe1c0bfd5579691980",
+"assets/AssetManifest.bin.json": "8e0d981d7506c4e93773de0c3a95b163",
+"assets/AssetManifest.json": "5f345b18a0fd1166513717a27ce2c2f2",
 "assets/assets/icons/body/001-ribcage.png": "e585553ccb753a45ae1843fce451cd36",
 "assets/assets/icons/body/002-eye.png": "b85ee825d6d01928b6979275a6d72910",
 "assets/assets/icons/body/003-blood.png": "252803f06c57602fd3b1419af9f04b87",
@@ -205,6 +207,7 @@ const RESOURCES = {
 "assets/assets/icons/professionals/048-nurse.png": "a64fad2f1d6c975f7ef0016d838e5bf5",
 "assets/assets/icons/professionals/049-surgeon.png": "a35536fcbb69a9d4016100171eb00688",
 "assets/assets/icons/professionals/050-podiatrist.png": "34952d099d511f0320150a91c61ce141",
+"assets/assets/images/pathologies/divers/dv/logigrammemx.png": "0d7d3967767fe1f4880c51bc91effb0d",
 "assets/assets/images/pathologies/divers/echo/10variationsea.gif": "ece61df5d2860e69ba3ac0edaa8dc74e",
 "assets/assets/images/pathologies/divers/echo/11diagepanchementpericardique.gif": "8f1c27b6d6752a7862a4a1ee9914f31a",
 "assets/assets/images/pathologies/divers/echo/12diagcoeurpulmaigu.gif": "ad07d4e09eff05d035cbf35c15fa4d8e",
@@ -247,6 +250,10 @@ const RESOURCES = {
 "assets/assets/images/pathologies/divers/intox/1toxicbandeau.jpg": "2039d27965cdc44ec811618015dc2c09",
 "assets/assets/images/pathologies/generique.jpg": "a7d0038dbd9e2a88e0f2ba9a813e9c27",
 "assets/assets/images/pathologies/generiquetransparent.png": "6ea9561df263e3f80ef10b9069995141",
+"assets/assets/images/pathologies/hematologie/teclistamab/tableau1.png": "8e350ccdac730e50fe0bfbd85d606ca9",
+"assets/assets/images/pathologies/hematologie/teclistamab/tableau2.png": "e0f8e8763bae977047e1fc4fcf526f2a",
+"assets/assets/images/pathologies/hematologie/teclistamab/tableau3.png": "8f5c3324399238e035001ec76778893b",
+"assets/assets/images/pathologies/hematologie/teclistamab/tableau4.png": "e6a6c45ad4e2a0d3116198d0bc456c90",
 "assets/assets/images/pathologies/hemodynamique/acfa/1ecgbandeau.jpg": "80570af785d750f9c43e616d103e83e6",
 "assets/assets/images/pathologies/hemodynamique/acfa/2ralentiracfamolecules.png": "e8371d00e6b121ef48b431a1406be7a9",
 "assets/assets/images/pathologies/hemodynamique/acfa/3reductionacfamolecules.png": "dcf4c7e1178dbc21c77cead934ed5cb5",
@@ -254,6 +261,8 @@ const RESOURCES = {
 "assets/assets/images/pathologies/hemodynamique/chochemorragique/Image1.jpg": "f55436320c467121e93b9cf3b6b728a3",
 "assets/assets/images/pathologies/hemodynamique/chochemorragique/Image2.jpg": "c1dc560d732bd8237f2e70ac42000581",
 "assets/assets/images/pathologies/hemodynamique/chochemorragique/protocolealgo.png": "f83be703426750125428c43312d50e5b",
+"assets/assets/images/pathologies/hemodynamique/ep/01pesi.png": "6d74500425c069af174bb562f97adafb",
+"assets/assets/images/pathologies/hemodynamique/ep/02fibrinolytique.png": "f4f5fc1891103dded6ad0a4bd3ac19ee",
 "assets/assets/images/pathologies/hemodynamique/etatdechoc/1determinantpam.PNG": "1548599d0360250d0b3ec3021242daf7",
 "assets/assets/images/pathologies/hemodynamique/etatdechoc/2etiologie.PNG": "3685eb4bee623e0b6e79fea86b3c210e",
 "assets/assets/images/pathologies/hemodynamique/etatdechoc/4calculrvs.PNG": "e00ce6cf095c27b8dba60f64178bc54f",
@@ -278,25 +287,125 @@ const RESOURCES = {
 "assets/assets/images/pathologies/hemodynamique/protocateco/Image7.png": "9cf6023c0fbec2f8ca6c503480cc8254",
 "assets/assets/images/pathologies/hemodynamique/protocateco/Image8.png": "50534d65d74736a80f3359715ba9008b",
 "assets/assets/images/pathologies/hemodynamique/protocateco/Image9.png": "a8c47665a934aa8a20f33b362579572a",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture1.png": "30bb38b97f88de36555f353a06ac3ce0",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture10.png": "5e733ab32b6e421346875ae8f78d0f04",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture2.png": "5d4624028329b94e185699230ed01332",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture3.png": "24f5f117f4fc894f0f153737e4e69694",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture4.png": "730fbc5a22bebb755aa3fac9c74e5aca",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture5.png": "38504aa48aae3276d45b98c46d698ba6",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture6.png": "2040e5414fddd497ff90df0acb799d18",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture7.png": "59d2df40eac278b42d5450b70553a829",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture8.png": "c8ba7e84dddc79a755b3d64eacee2336",
+"assets/assets/images/pathologies/hemodynamique/protodio/Picture9.png": "c492085c26a6676ee3a5fd64bd4727a2",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Picture1.png": "dfd9cfcc76d2df721a69c223fe319bd5",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Picture1b.png": "67d6e296d0e2d63f3004f4e82d3123e7",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Picture2.png": "cbd51d885d2e28442115e3ae1ffef4d6",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Picture2b.png": "25c52331dbd6d5b39cc44acd3828c8e9",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Picture3.png": "dc7134c6c335e755f48517c3b9f3420d",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Table1.png": "d25babe92245a158f4595f4cf70fe2cd",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Table2.png": "1778fc16e0deeb9c9b4eab475febfe58",
+"assets/assets/images/pathologies/hemodynamique/protoktc/Table3.png": "f7bf3e224d1f4e75a7208bac79cf7e25",
 "assets/assets/images/pathologies/hemodynamique/sca/2stemiequivalent.jpg": "c7313b0e77ecf44f546afc3efbcdd1df",
 "assets/assets/images/pathologies/hemodynamique/sca/3sgarbossamodified.jpg": "5b54ac9cc5e4325cff8a30ff59c7d723",
 "assets/assets/images/pathologies/hemodynamique/sca/4algosca.png": "6945a9b432ed59554c74c68683cd1a8c",
 "assets/assets/images/pathologies/hemodynamique/sca/4algosca2.png": "7037f043daa6610b7777cf3deda1ecce",
 "assets/assets/images/pathologies/infectieux/antiinfectieux/1atbbandeau.png": "0c1d361da845b8adbb279cb537a3431c",
+"assets/assets/images/pathologies/infectieux/bronchopulmonaire/1.png": "384de220ef489bb52ded3cfc3919295b",
+"assets/assets/images/pathologies/infectieux/bronchopulmonaire/2.png": "3e7e60f72a0eb0223c15ddd71a5e39ee",
+"assets/assets/images/pathologies/infectieux/bronchopulmonaire/3.png": "7ff029fbd071d1aba3c5c1938400153a",
+"assets/assets/images/pathologies/infectieux/bronchopulmonaire/4.png": "f7f1e246f4f70e4e5b5a307762999522",
+"assets/assets/images/pathologies/infectieux/bronchopulmonaire/5.png": "be4f0cbea9de0710ae42d198b6184800",
+"assets/assets/images/pathologies/infectieux/bronchopulmonaire/6.png": "aa385c78edf294708050d8bd827e176b",
 "assets/assets/images/pathologies/infectieux/covid/1covidbandeau.jpg": "3af8fa7acdac2722d4717f4e3c17bad3",
 "assets/assets/images/pathologies/infectieux/covid/1covidbandeaunoir.jpg": "1872f66757ca58764430f57872e36f8f",
 "assets/assets/images/pathologies/infectieux/covid/algocovidghef1.PNG": "e507213f61a78f0cddeb3c6a416e8c36",
 "assets/assets/images/pathologies/infectieux/covid/algocovidghef2.PNG": "06c191c6400b6c1217412481b7586adb",
 "assets/assets/images/pathologies/infectieux/covid/algocovidghef3.PNG": "ec84a0de406191520e1566d514402ba7",
+"assets/assets/images/pathologies/infectieux/cutanees/1.png": "6aa523de6f71a17a424158f6a0602100",
+"assets/assets/images/pathologies/infectieux/cutanees/2.png": "800c3d7e89fa97ae8f5cd2338a4584b1",
+"assets/assets/images/pathologies/infectieux/cutanees/3.png": "d725dae678a9b92f79eac1d166e10985",
+"assets/assets/images/pathologies/infectieux/cutanees/4.png": "9999a6da95c4890757aa30d2e92bc4af",
+"assets/assets/images/pathologies/infectieux/cutanees/5.png": "96d81b825692279101f2a98c73ae99a6",
+"assets/assets/images/pathologies/infectieux/cutanees/6.png": "acbccc5321545cb4193f5dbe1169692c",
+"assets/assets/images/pathologies/infectieux/diarrhees/1.png": "1fc5a10d31da4c6ef997987015e8c146",
+"assets/assets/images/pathologies/infectieux/diarrhees/2.png": "a2f65a51f37812c816dc116225ae50d4",
 "assets/assets/images/pathologies/infectieux/dureeatb/DureeATB1.png": "4ca44e8354c110c416f44f8c8cb82e43",
 "assets/assets/images/pathologies/infectieux/dureeatb/DureeATB2.png": "fe32dd8744ddd80f2534b8c4aa687e61",
+"assets/assets/images/pathologies/infectieux/endocardites/1.png": "47b5c61efe191b578bada90cf5e6020c",
+"assets/assets/images/pathologies/infectieux/endocardites/2.png": "52a1a1e1a11ff366db9f51c4ea6ced3c",
+"assets/assets/images/pathologies/infectieux/endocardites/3.png": "79efd9d822de2e2381b3cec75ac8241f",
+"assets/assets/images/pathologies/infectieux/endocardites/4.png": "9fc47072ed9fd79d0e66f247bc6ea5eb",
+"assets/assets/images/pathologies/infectieux/endocardites/5.png": "6f37dbba4b1263bd36ac97761d44c72c",
+"assets/assets/images/pathologies/infectieux/endocardites/6.png": "a7c4d70f8a462c6d221a97f5b2fd2f2d",
+"assets/assets/images/pathologies/infectieux/endocardites/7.png": "3b16466f5137e7171478edb869619364",
 "assets/assets/images/pathologies/infectieux/escarres/1Escarre.PNG": "19a1060a07059182a9052426d806061d",
 "assets/assets/images/pathologies/infectieux/escarres/2Escarre.PNG": "441bcceb95ae98adba7bd4b17ed3e92b",
 "assets/assets/images/pathologies/infectieux/escarres/3Escarre.PNG": "340ba25c53ea5446f1d5e30eceaf2682",
 "assets/assets/images/pathologies/infectieux/escarres/4Escarre.PNG": "d7295d9824d1a86645505289d0d66d12",
+"assets/assets/images/pathologies/infectieux/gyn/1.png": "33a8bde59413c21b3bb40a7b9d75eda0",
+"assets/assets/images/pathologies/infectieux/gyn/2.png": "f419952a17a42766508c4feed25b4465",
+"assets/assets/images/pathologies/infectieux/gyn/3.png": "7ad54dc33aebc46924c83d6f46219344",
+"assets/assets/images/pathologies/infectieux/gyn/4.png": "d607d37c7637bb5cfffbaeed0cce12ab",
+"assets/assets/images/pathologies/infectieux/gyn/5.png": "644210e1dcd027f6915e8d8d49f887b6",
+"assets/assets/images/pathologies/infectieux/hygiene/1.png": "4d1145c37d5c2480854bd66ba1beffb1",
+"assets/assets/images/pathologies/infectieux/hygiene/10.png": "711c96f1d97bbb4660a503f95d0fe819",
+"assets/assets/images/pathologies/infectieux/hygiene/11.png": "626e1b4b6032509aa846bc06921fb472",
+"assets/assets/images/pathologies/infectieux/hygiene/2.png": "7bc3b1b3476c21a03cc8f1600cdcf861",
+"assets/assets/images/pathologies/infectieux/hygiene/3.png": "76df8760c661646d2cb81080b93ad505",
+"assets/assets/images/pathologies/infectieux/hygiene/4.png": "27c2a845f39b7bf3cde007106d1d363a",
+"assets/assets/images/pathologies/infectieux/hygiene/5.png": "46ddb7ad4d333e382f3650533d5347ec",
+"assets/assets/images/pathologies/infectieux/hygiene/6.png": "97cde7d0f7ee793ee24179237e30c63b",
+"assets/assets/images/pathologies/infectieux/hygiene/7.png": "11e91760ba8428c20599356801def06f",
+"assets/assets/images/pathologies/infectieux/hygiene/8.png": "80cbcb691416b086e2b38eecf786e7a4",
+"assets/assets/images/pathologies/infectieux/hygiene/9.png": "d4f1e3b2c8cd5fe4cff64a45eb223c40",
+"assets/assets/images/pathologies/infectieux/hygiene/precautions.png": "5942936d2fce6bd0486d8dfc5996bf8a",
+"assets/assets/images/pathologies/infectieux/ioa/ioa.png": "f218bdd44a1056728fdfa86e051d0461",
+"assets/assets/images/pathologies/infectieux/ioa/ioa2.png": "b11e43f64284ef228d96063a771df337",
+"assets/assets/images/pathologies/infectieux/ioa/ioa2b.png": "f5cb2ba63e4cb41c82182a97e2edbadb",
+"assets/assets/images/pathologies/infectieux/ioa/ioa3.png": "643871f3f7e9f2e98798107eca382875",
+"assets/assets/images/pathologies/infectieux/ioa/ioa4.png": "6e4bb31a9a697fd0ed264dff1c29d70f",
+"assets/assets/images/pathologies/infectieux/ipppd/Picture1.png": "4a31b635a81f83a83bfb3a40f0f2fed8",
+"assets/assets/images/pathologies/infectieux/ipppd/Picture2.png": "c8aff4d412598b0520444a8529ff5f82",
+"assets/assets/images/pathologies/infectieux/ipppd/Picture3.png": "367c163d17f65a26718a3a8b042e421c",
+"assets/assets/images/pathologies/infectieux/neuromeninge/1.png": "a708421f15a29e7e0abb4e6de4f606a3",
+"assets/assets/images/pathologies/infectieux/neuromeninge/2.png": "2219734ffea381012a5a6682cc7a57e2",
+"assets/assets/images/pathologies/infectieux/neuromeninge/3.png": "f1160e7d8de62a455844ac9ceba2ad23",
+"assets/assets/images/pathologies/infectieux/neuromeninge/4.png": "cc30bae12e52fab0cdbae195daffe303",
+"assets/assets/images/pathologies/infectieux/orl/1.png": "2f30bb8ffd732fc133d4aeb083f675aa",
+"assets/assets/images/pathologies/infectieux/orl/2.png": "d390c51d265520b744c03419127b900e",
+"assets/assets/images/pathologies/infectieux/orl/3.png": "d989f13e06818ace45eac5198d87efdf",
+"assets/assets/images/pathologies/infectieux/orl/4.png": "228f03fd8e393348e5fc3f453a0d5f5d",
+"assets/assets/images/pathologies/infectieux/orl/5.png": "20cff6735dd07d740eb2b8867026e246",
+"assets/assets/images/pathologies/infectieux/orl/6.png": "5592f2c023b328dcd1a155ede05346aa",
+"assets/assets/images/pathologies/infectieux/paludisme/1.png": "c1778ae0c13603e8410927d07bb0cdaa",
+"assets/assets/images/pathologies/infectieux/paludisme/2.png": "b4a8e2dbb17c8ac1a131569a82fbf82b",
+"assets/assets/images/pathologies/infectieux/sfp/sfp1.png": "99468115d0b5cf813c1690cdefc6cf1d",
+"assets/assets/images/pathologies/infectieux/sfp/sfp10.png": "8d3ed7fceeee912215cffac8928b5d51",
+"assets/assets/images/pathologies/infectieux/sfp/sfp11.png": "a44104c118573e8612604643470fc278",
+"assets/assets/images/pathologies/infectieux/sfp/sfp12.png": "a1e36dca1992c8370691321c7192b1d8",
+"assets/assets/images/pathologies/infectieux/sfp/sfp13.png": "214c7b0c3ba35ae6abf844cd4ae6ba56",
+"assets/assets/images/pathologies/infectieux/sfp/sfp2.png": "8197bed356b1a83be9d49f3a5b4ec167",
+"assets/assets/images/pathologies/infectieux/sfp/sfp3.png": "8d4333003b97bc219649cb2887a7e5c7",
+"assets/assets/images/pathologies/infectieux/sfp/sfp4.png": "d6e9d51b12c334e7b2205b037d784b3d",
+"assets/assets/images/pathologies/infectieux/sfp/sfp5.png": "bf569603fc5f75a1b6c8485f7b0a2094",
+"assets/assets/images/pathologies/infectieux/sfp/sfp6.png": "8b5e239a0b14be8b80f13ec9c62d4dae",
+"assets/assets/images/pathologies/infectieux/sfp/sfp7.png": "e98f1c9903ab31e45b010cdb480c9c16",
+"assets/assets/images/pathologies/infectieux/sfp/sfp8.png": "b1aca2bd28b113ab5ed764b88b27538c",
+"assets/assets/images/pathologies/infectieux/sfp/sfp9.png": "f2470d9a437a8d73f810831d36723f27",
+"assets/assets/images/pathologies/infectieux/tuberculose/1.png": "c3e6693a44c1979b526914517198b0d3",
+"assets/assets/images/pathologies/infectieux/tuberculose/2.png": "d46fc4566b957f64478de91539497e07",
+"assets/assets/images/pathologies/infectieux/tuberculose/3.png": "554176e76a48b4b84e51a1c3db2d7136",
+"assets/assets/images/pathologies/infectieux/vih/candidose.png": "d7e99ba39b882dcfb482511cd9517deb",
+"assets/assets/images/pathologies/infectieux/vih/cryptococcose.png": "b496eb83c18741d03f8f05bfbe1a8aec",
+"assets/assets/images/pathologies/infectieux/vih/pneumocystoseprophylaxie.png": "f0d30a4f273f8eb21b2676a6345166ea",
+"assets/assets/images/pathologies/infectieux/vih/pneumocystosettt.png": "2596f92aed5b245f5dd3ae36950ffd49",
+"assets/assets/images/pathologies/infectieux/vih/toxoplasmose.png": "204709882ab763c553e173b497d0e665",
+"assets/assets/images/pathologies/metabolique/balancehydrique/1.png": "169a2cc34f04382f4a8cf4cbf5a4f5cd",
+"assets/assets/images/pathologies/metabolique/balancehydrique/2.png": "76a3d80389aae3ce453deec6eae29c2e",
 "assets/assets/images/pathologies/metabolique/corticoide/1EquivalentCT.PNG": "6f4daacd32ff04d29213805eba385309",
 "assets/assets/images/pathologies/metabolique/hyponatremie/1algorithmeHypoNAttt.png": "9d9af97b3305adef31d473741f5df33f",
 "assets/assets/images/pathologies/metabolique/hyponatremie/2hyponadiag.jpg": "09f42cb21a2f8ffd13bd3afe0a85e3be",
+"assets/assets/images/pathologies/metabolique/hyponatremie/hyponatremiaosmolalityalgorithm.jpeg": "1489dde5b3fcc97c17a1bd1b07215f0f",
 "assets/assets/images/pathologies/metabolique/lactate/1lactateb.png": "abe7fe4421a135d0166b27c6a893ccfc",
 "assets/assets/images/pathologies/metabolique/lactate/2lactate.png": "d8118c8b2fc1a9fd23c28afadf79e2f1",
 "assets/assets/images/pathologies/metabolique/lactate/3lactate.png": "3bd09fe19a7f851322147d7ee9c192af",
@@ -367,36 +476,54 @@ const RESOURCES = {
 "assets/assets/images/pathologies/respiratoire/modeventilatoire/determinantsventilation.png": "cefcc793405b19f4a49758a001473cbe",
 "assets/assets/images/pathologies/respiratoire/modeventilatoire/mesureajuster.png": "bdf65843decae661d9a819f6deb5a55e",
 "assets/assets/images/pathologies/respiratoire/modeventilatoire/modesventilatoires.png": "596192d5672784644cf6473e0ede8259",
+"assets/assets/images/pathologies/respiratoire/prototrach/bivona.PNG": "1ff8af29d1fb4e579bd2b360113bac24",
+"assets/assets/images/pathologies/respiratoire/prototrach/canulefenetre.PNG": "449cae55555e672adc4fcaa6280c1ec5",
+"assets/assets/images/pathologies/respiratoire/prototrach/cordon.jpg": "8a31182372c38128673845853fc50190",
+"assets/assets/images/pathologies/respiratoire/prototrach/fluxvalvephonatoire.png": "524759e6ae5d8def4f4c046141b21d69",
+"assets/assets/images/pathologies/respiratoire/prototrach/illustration.png": "e911498f631dc6a51888e5d8559e5793",
+"assets/assets/images/pathologies/respiratoire/prototrach/kit.PNG": "b315c9e1de0de2f78d00b11d198eb5e1",
+"assets/assets/images/pathologies/respiratoire/prototrach/laborde.png": "1b8d600ee5efcb05bc5ff6909cceccca",
+"assets/assets/images/pathologies/respiratoire/prototrach/nezartificiel.jpg": "2d21a6f228288d191584bc2c950b2caa",
+"assets/assets/images/pathologies/respiratoire/prototrach/pansementmetalline.jpg": "720c7600f74065b8a4861885605719a9",
+"assets/assets/images/pathologies/respiratoire/prototrach/Tracheostomie.png": "e5193208f535fa6183336852e6dbbad5",
+"assets/assets/images/pathologies/respiratoire/prototrach/Tracheotomie.jpg": "e6e8b68dd91ce0b4e1b22b864b599ec2",
+"assets/assets/images/pathologies/respiratoire/prototrach/valvephonatoire.jpg": "2297774a8faa10815a09f26593e73313",
 "assets/assets/images/pathologies/respiratoire/tracheotomiepercut/imagesetapestracheotomiepercut.png": "894b08c9ceb11575c93db1a415c07a07",
 "assets/assets/images/pathologies/respiratoire/tracheotomiepercut/resumeproceduretrachpercut.png": "c1a21f7d0c79a3d0cc1b2b6dec9da6b1",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
-"assets/NOTICES": "3d458f925c46956264db9fd2438a18fd",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
+"assets/fonts/MaterialIcons-Regular.otf": "a9c7acd6423e23523a1c674c8ba2d862",
+"assets/NOTICES": "6da60aeb0655ec9501ce27063fda286d",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
+"assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
+"assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
+"assets/packages/youtube_player_flutter/assets/speedometer.webp": "50448630e948b5b3998ae5a5d112622b",
+"assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
+"canvaskit/canvaskit.js": "eb8797020acdbdf96a12fb0405582c1b",
+"canvaskit/canvaskit.wasm": "73584c1a3367e3eaf757647a8f5c5989",
+"canvaskit/chromium/canvaskit.js": "0ae8bbcc58155679458a0f7a00f66873",
+"canvaskit/chromium/canvaskit.wasm": "143af6ff368f9cd21c863bfa4274c406",
+"canvaskit/skwasm.js": "87063acf45c5e1ab9565dcf06b0c18b8",
+"canvaskit/skwasm.wasm": "2fc47c0a0c3c7af8542b601634fe9674",
+"canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
+"firebase-messaging-sw.js": "3707b19cb4f78ec69555d454b7409219",
+"flutter.js": "59a12ab9d00ae8f8096fffc417b6e84f",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "d307f80b0a634cd7ac11d572e36ea58e",
-"/": "d307f80b0a634cd7ac11d572e36ea58e",
-"main.dart.js": "228035dfe481eaac5f223f46e8623578",
+"index.html": "8e8f855a507ebbbfd1949653b79c9799",
+"/": "8e8f855a507ebbbfd1949653b79c9799",
+"main.dart.js": "b850fc21b871c4ce316047e95dcf2a68",
 "manifest.json": "1e8731a1cb377a6c2c169505e1c11d13",
-"version.json": "0d6003293d62fea620f15fa2141832d5"
-};
-
+"version.json": "0d6003293d62fea620f15fa2141832d5"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -407,7 +534,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -429,6 +555,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -454,6 +582,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -464,7 +594,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -504,7 +633,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -517,7 +645,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -538,7 +665,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {
