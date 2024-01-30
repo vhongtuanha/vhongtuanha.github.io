@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "ee757b7507cc78fe1c0bfd5579691980",
-"assets/AssetManifest.bin.json": "8e0d981d7506c4e93773de0c3a95b163",
-"assets/AssetManifest.json": "5f345b18a0fd1166513717a27ce2c2f2",
+const RESOURCES = {"assets/AssetManifest.bin": "c0c30bd6a13c0e6d011c8d960c8e2d65",
+"assets/AssetManifest.bin.json": "eee2dad7a4de07df674b0e55f43b51e1",
+"assets/AssetManifest.json": "4c18966766175444b723b038234f2f9c",
 "assets/assets/icons/body/001-ribcage.png": "e585553ccb753a45ae1843fce451cd36",
 "assets/assets/icons/body/002-eye.png": "b85ee825d6d01928b6979275a6d72910",
 "assets/assets/icons/body/003-blood.png": "252803f06c57602fd3b1419af9f04b87",
@@ -379,6 +379,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "ee757b7507cc78fe1c0bfd5579691980
 "assets/assets/images/pathologies/infectieux/orl/6.png": "5592f2c023b328dcd1a155ede05346aa",
 "assets/assets/images/pathologies/infectieux/paludisme/1.png": "c1778ae0c13603e8410927d07bb0cdaa",
 "assets/assets/images/pathologies/infectieux/paludisme/2.png": "b4a8e2dbb17c8ac1a131569a82fbf82b",
+"assets/assets/images/pathologies/infectieux/sfp/sfp0.png": "909b29d83c2e9984f4c1518a2957a79b",
 "assets/assets/images/pathologies/infectieux/sfp/sfp1.png": "99468115d0b5cf813c1690cdefc6cf1d",
 "assets/assets/images/pathologies/infectieux/sfp/sfp10.png": "8d3ed7fceeee912215cffac8928b5d51",
 "assets/assets/images/pathologies/infectieux/sfp/sfp11.png": "a44104c118573e8612604643470fc278",
@@ -512,9 +513,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "ee757b7507cc78fe1c0bfd5579691980
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "8e8f855a507ebbbfd1949653b79c9799",
-"/": "8e8f855a507ebbbfd1949653b79c9799",
-"main.dart.js": "b850fc21b871c4ce316047e95dcf2a68",
+"index.html": "0d19532170381438527e114122048af8",
+"/": "0d19532170381438527e114122048af8",
+"main.dart.js": "4379c7f5871d9f693fdf7b2e5107a60a",
 "manifest.json": "1e8731a1cb377a6c2c169505e1c11d13",
 "version.json": "0d6003293d62fea620f15fa2141832d5"};
 // The application shell files that are downloaded before a service worker can
