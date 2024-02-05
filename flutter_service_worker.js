@@ -403,7 +403,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "c0c30bd6a13c0e6d011c8d960c8e2d65
 "assets/assets/images/pathologies/infectieux/vih/toxoplasmose.png": "204709882ab763c553e173b497d0e665",
 "assets/assets/images/pathologies/metabolique/balancehydrique/1.png": "169a2cc34f04382f4a8cf4cbf5a4f5cd",
 "assets/assets/images/pathologies/metabolique/balancehydrique/2.png": "76a3d80389aae3ce453deec6eae29c2e",
-"assets/assets/images/pathologies/metabolique/corticoide/1EquivalentCT.PNG": "6f4daacd32ff04d29213805eba385309",
+"assets/assets/images/pathologies/metabolique/corticoide/1EquivalentCT.PNG": "ec1353f20e8d5209ccb5a7e21de65a01",
 "assets/assets/images/pathologies/metabolique/hyponatremie/1algorithmeHypoNAttt.png": "9d9af97b3305adef31d473741f5df33f",
 "assets/assets/images/pathologies/metabolique/hyponatremie/2hyponadiag.jpg": "09f42cb21a2f8ffd13bd3afe0a85e3be",
 "assets/assets/images/pathologies/metabolique/hyponatremie/hyponatremiaosmolalityalgorithm.jpeg": "1489dde5b3fcc97c17a1bd1b07215f0f",
@@ -513,9 +513,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "c0c30bd6a13c0e6d011c8d960c8e2d65
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "eec7093a551fccadad4716bcf8da90e3",
-"/": "eec7093a551fccadad4716bcf8da90e3",
-"main.dart.js": "4379c7f5871d9f693fdf7b2e5107a60a",
+"index.html": "91f3741c67928b17ece404a609eb48e0",
+"/": "91f3741c67928b17ece404a609eb48e0",
+"main.dart.js": "6994e32c18da8a95ccc4cff8b033729d",
 "manifest.json": "1e8731a1cb377a6c2c169505e1c11d13",
 "version.json": "0d6003293d62fea620f15fa2141832d5"};
 // The application shell files that are downloaded before a service worker can
